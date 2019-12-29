@@ -1,3 +1,6 @@
+// Refer Here for more info 
+// https://botleg.com/stories/bookmarklet-scripts/
+// https://www.w3schools.com/xml/ajax_xmlhttprequest_send.asp
 
 javascript: (function() {
   xhr = new XMLHttpRequest();
