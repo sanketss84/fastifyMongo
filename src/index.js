@@ -24,8 +24,8 @@ routes.forEach((route, index) => {
 })
 
 // fastify.listen(3000)
-//fastify.swagger()
-//fastify.log.info(`listening on ${fastify.server.address().port}`)
+// fastify.swagger()
+// fastify.log.info(`listening on ${fastify.server.address().port}`)
 
 // Run the server!
 const start = async () => {

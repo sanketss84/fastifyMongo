@@ -1,5 +1,6 @@
 // Import our Controllers
 const carController = require('../controllers/carController')
+const bookmarkController = require('../controllers/bookmarkController')
 
 const routes = [
   {
@@ -27,7 +28,37 @@ const routes = [
     method: 'DELETE',
     url: '/api/cars/:id',
     handler: carController.deleteCar
-  }
+  },
+
+
+
+
+
+  {
+    method: 'GET',
+    url: '/api/bookmarks',
+    handler: bookmarkController.getBookmarks
+  },
+  {
+    method: 'GET',
+    url: '/api/bookmark/:id',
+    handler: bookmarkController.getSingleBookmark
+  },
+  {
+    method: 'POST',
+    url: '/api/bookmark',
+    handler: bookmarkController.addBookmark
+  },
+  {
+    method: 'PUT',
+    url: '/api/bookmark/:id',
+    handler: bookmarkController.updateBookmark
+  },
+  {
+    method: 'DELETE',
+    url: '/api/bookmark/:id',
+    handler: bookmarkController.deleteBookmark
+  }  
 ]
 
 module.exports = routes

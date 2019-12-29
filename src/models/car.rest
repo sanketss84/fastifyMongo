@@ -1,0 +1,14 @@
+POST http://localhost:3000/api/cars
+Content-Type: application/json
+
+{
+    "title" : "Model C",
+    "brand" : "Tesla",
+    "price" : "20000",
+    "age" : 1    
+}
+
+###
+
+GET http://localhost:3000/api/cars
+

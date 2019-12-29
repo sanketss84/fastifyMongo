@@ -1,0 +1,27 @@
+POST http://localhost:3000/api/bookmark
+Content-Type: application/json
+
+{
+    "title" : "Documentation Home - Apollo Basics - Apollo GraphQL Doc",
+    "url" : "https://www.apollographql.com/docs/",
+    "tags" : "apollo,graphql,node"
+}
+
+###
+POST http://localhost:3000/api/bookmark
+Content-Type: application/json
+
+{
+    "title" : "test",
+    "url" : "https://test",
+    "tags" : "test"
+}
+
+
+###
+
+GET http://localhost:3000/api/bookmarks
+
+###
+GET http://localhost:3000/api/bookmark/5e0843bb287ed83bc46ed430
+
